@@ -117,5 +117,11 @@ function runEnter() {
 
   // Processes if the user input does not match anything in the archive
   else {
+
+    window.alert("The date you entered into the filter does not exist in the data. Please try again.")
+    resetTable();
+    buildTable(tableData);
+
+
   }
 }
